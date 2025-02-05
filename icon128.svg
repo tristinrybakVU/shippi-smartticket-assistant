@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="houseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#003366;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#004080;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <!-- Background -->
+    <rect width="128" height="128" rx="16" fill="url(#houseGrad)"/>
+    
+    <!-- House shape -->
+    <path d="M64 24 L24 64 L32 64 L32 96 L96 96 L96 64 L104 64 Z" 
+          fill="white" 
+          stroke="white" 
+          stroke-width="2"/>
+    
+    <!-- J letter -->
+    <text x="64" y="84" 
+          font-family="Arial, sans-serif" 
+          font-size="52" 
+          font-weight="bold" 
+          fill="#003366" 
+          text-anchor="middle">J</text>
+          
+    <!-- Stars -->
+    <g fill="#E31837">
+        <circle cx="52" cy="48" r="5"/>
+        <circle cx="64" cy="48" r="5"/>
+        <circle cx="76" cy="48" r="5"/>
+    </g>
+    
+    <!-- Red stripes -->
+    <rect x="44" y="88" width="40" height="3" fill="#E31837"/>
+    <rect x="44" y="92" width="40" height="3" fill="#E31837"/>
+</svg>

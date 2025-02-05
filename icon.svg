@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#2684FF"/>
+  
+  <!-- Chat bubble outline -->
+  <path d="M40 38h48c2.2 0 4 1.8 4 4v28c0 2.2-1.8 4-4 4H68l-12 12-12-12H40c-2.2 0-4-1.8-4-4V42c0-2.2 1.8-4 4-4z" 
+        fill="white" stroke="#253858" stroke-width="2"/>
+  
+  <!-- AI Enhancement lines -->
+  <g stroke="#253858" stroke-width="2" stroke-linecap="round">
+    <line x1="48" y1="50" x2="80" y2="50"/>
+    <line x1="48" y1="58" x2="75" y2="58"/>
+    <line x1="48" y1="66" x2="70" y2="66"/>
+  </g>
+  
+  <!-- Sparkles representing AI enhancement -->
+  <g fill="#FFD700">
+    <circle cx="90" cy="38" r="3"/>
+    <circle cx="95" cy="48" r="2"/>
+    <circle cx="85" cy="45" r="2"/>
+  </g>
+</svg>

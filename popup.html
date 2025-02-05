@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shippi SmartTicket Assistant</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <img src="icon48.png" alt="Shippi Logo" class="logo">
+      <h2>Shippi SmartTicket</h2>
+    </div>
+    <div class="settings">
+      <div class="setting-group">
+        <label for="apiKey">OpenAI API Key:</label>
+        <input type="password" id="apiKey" placeholder="Enter your OpenAI API key">
+      </div>
+
+      <div class="setting-group">
+        <label for="intensity">Enhancement Intensity:</label>
+        <select id="intensity">
+          <option value="minimal">Minimal - Light formatting, keep it brief</option>
+          <option value="moderate" selected>Moderate - Balance between concise and detailed</option>
+          <option value="detailed">Detailed - More comprehensive explanations</option>
+        </select>
+      </div>
+
+      <div class="setting-group">
+        <label for="style">Writing Style:</label>
+        <select id="style">
+          <option value="technical">Technical - Engineering focused</option>
+          <option value="balanced" selected>Balanced - Professional but accessible</option>
+          <option value="simple">Simple - Clear and straightforward</option>
+        </select>
+      </div>
+
+      <div class="setting-group">
+        <label>Format Preferences:</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="autoFormat" checked>
+            Auto-format code blocks
+          </label>
+          <label>
+            <input type="checkbox" id="addLinks" checked>
+            Include related ticket links
+          </label>
+          <label>
+            <input type="checkbox" id="autoSave">
+            Auto-save after enhancing
+          </label>
+        </div>
+      </div>
+
+      <button id="saveSettings">Save Settings</button>
+    </div>
+    <div class="status">
+      <p id="statusMessage"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

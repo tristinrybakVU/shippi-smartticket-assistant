@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Shippi SmartTicket Assistant",
+  "version": "1.0",
+  "description": "Enhance your project tickets with AI-powered suggestions. Part of the Shippi Suite.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.atlassian.net/*",
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.atlassian.net/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "homepage_url": "https://github.com/yourusername/shippi-smartticket",
+  "author": "Your Name",
+  "minimum_chrome_version": "88"
+}

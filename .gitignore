@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+*.zip
+dist/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
